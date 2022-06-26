@@ -1,5 +1,6 @@
 #>>>>>>>>>>>>>>>>>>>>>>>Whats App Cli<<<<<<<<<<<<<<<<<<<<<<<<<<
 #PreetyPlayer tool for firefox
+#Worked on linux
 from time import sleep as slp          
 from selenium import webdriver as web
 from os import system as s
@@ -94,8 +95,6 @@ class whatsapp:
 				slp(0.3)
 			slp(2)
 			what.multi(self.victm,self.msg_box)
-		finally:
-			pass
 	def long(self,name,msg_box):
 		s('clear' or 'cls')
 		try:
@@ -121,8 +120,6 @@ class whatsapp:
 		except(Exception):
 			print(Exception)
 			what.long(self.name,self.msg_box)
-		finally:
-			pass
 what=whatsapp()
 if __name__=="__main__":
 		what.home()
